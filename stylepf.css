@@ -728,3 +728,7 @@ nav p {
     font-size: 24px;
     transform: translate(-4%);
 }
+
+.chatbot {
+    position: absolute;
+}
