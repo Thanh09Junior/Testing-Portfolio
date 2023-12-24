@@ -76,7 +76,7 @@ body {
 .Header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(88, 78, 78, 0.123), rgba(129, 132, 146, 0.7)), url(./Anh/First_background.jpg);
+    background-image: linear-gradient(rgba(88, 78, 78, 0.123), rgba(129, 132, 146, 0.7)), url(./Anh/background.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
