@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frequently Asked Questions</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <p>Công ti phát triển và cải tiến công nghệ - Kinh doanh (ITB: Innovative Tech & Business company)</p>
+    <h1>Những câu hỏi thường gặp</h1>
+
+    <div class="faq">
+      <button class="accordion">
+        Junior Thành là ai?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          Junior Thành hay còn được gọi là Thành Bq là tên gọi do mình tự đặt cho bản thân.
+          Tên đầy đủ của mình là Văn Trung Thành. Năm nay mình 18 tuổi. Từng học và đã tốt nghiệp tại trường THPT Phạm
+          Văn Sáng.
+          Hiện tại đang học ngành CNTT tại trường đại học Mở TP.Hồ Chí Mính.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        Thông tin cơ bản.
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          Họ và tên: Văn Trung Thành<br>Giới tính: Nam<br>Học vấn: 12/12<br>Sở thích: Nghe nhạc, xem phim, furry
+          (housamo: Seth)<br>Biệt
+          danh: Thầy, giám đốc (được bạn bè gọi vui thôi)
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        Vậy cái website Interstrellar và Junior_Thanh để làm gì?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          Mục đích của website chủ yếu là để giới thiệu bản thân mình. Đồng thời đưa ra những dịch vụ và dự án mà bạn
+          có thể quan tâm. Tuy nhiên hiện tại thì tất cả các dịch vụ đều đang offline và không thể đăng kí. Trong tương
+          lai
+          mình sẽ mở dịch vụ nếu có thể.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        Các lưu ý khi mua dịch vụ hoặc download dự án
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          1. Tuân thủ các quy định được đặt ra trong Term & condition (thông thường trước khi đăng kí dịch vụ sẽ có phần
+          này)<br>
+          2. Hãy đọc kĩ các lưu ý được đặt ra trước khi mua dịch vụ nào.<br>
+          3. Hiện tại mình chỉ là sinh viên năm nhất nên hầu hết các dịch vụ lần đầu mở sẽ miễn phí hoặc giá rất rẻ (Do
+          tay nghề yếu, lấy kinh nghiệm).<br>
+          4. Mình sẽ không chịu trách nhiệm với bất cứ dịch vụ, sản phẩm nào bạn lấy từ bên ngoài nguồn chính thức
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        Bạn là một Furry?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          Có thể nói là vậy. Nhưng chủ yếu nó khá giống việc coi anime hay phim vậy chủ yếu là để giải trí và cute. Còn
+          về
+          việc trong tương lai mình có tính mở dịch vụ liên quan đến nó không thì có thể sẽ không (hoặc có). Mình có
+          phải gay khong?
+          Bạn đoán thử xem.
+        </p>
+      </div>
+    </div>
+
+    <div class="faq">
+      <button class="accordion">
+        Bạn có đáng tin không?
+        <i class="fa-solid fa-chevron-down"></i>
+      </button>
+      <div class="pannel">
+        <p>
+          Tùy bạn xem xét.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        this.parentElement.classList.toggle("active");
+
+        var pannel = this.nextElementSibling;
+
+        if (pannel.style.display === "block") {
+          pannel.style.display = "none";
+        } else {
+          pannel.style.display = "block";
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

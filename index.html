@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Gallery Web Page</title>
+</head>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+    }
+
+    .image-container {
+        width: calc(25% - 20px);
+        /* 25% của width mỗi ảnh và trừ đi khoảng cách */
+        margin: 10px;
+        overflow: hidden;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .image-container img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .image-container:hover img {
+        transform: scale(1.1);
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Photo Gallery</h1>
+    </header>
+    <section class="gallery">
+        <div class="image-container">
+            <img src="./Anh/Company.png" alt="Image 1">
+        </div>
+        <div class="image-container">
+            <img src="./Anh/Company.png" alt="Image 2">
+        </div>
+        <div class="image-container">
+            <img src="images/image3.jpg" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="images/image1.jpg" alt="Image 1">
+        </div>
+        <div class="image-container">
+            <img src="images/image2.jpg" alt="Image 2">
+        </div>
+        <div class="image-container">
+            <img src="images/image3.jpg" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="images/image1.jpg" alt="Image 1">
+        </div>
+        <div class="image-container">
+            <img src="images/image2.jpg" alt="Image 2">
+        </div>
+        <div class="image-container">
+            <img src="images/image3.jpg" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="images/image1.jpg" alt="Image 1">
+        </div>
+        <div class="image-container">
+            <img src="images/image2.jpg" alt="Image 2">
+        </div>
+        <div class="image-container">
+            <img src="images/image3.jpg" alt="Image 3">
+        </div>
+        <div class="image-container">
+            <img src="images/image1.jpg" alt="Image 1">
+        </div>
+        <div class="image-container">
+            <img src="images/image2.jpg" alt="Image 2">
+        </div>
+        <div class="image-container">
+            <img src="images/image3.jpg" alt="Image 3">
+        </div>
+        <!-- Add more image containers as needed -->
+    </section>
+    <footer>
+        <p>&copy; 2023 Gallery Web Page</p>
+    </footer>
+</body>
+
+</html>
