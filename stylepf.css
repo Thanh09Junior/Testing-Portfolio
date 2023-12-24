@@ -604,13 +604,11 @@ nav p {
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./Anh/footer.jpg);
     background-position: center;
     background-size: cover;
-    position: relative;
 }
 
 .footer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
-    position: relative;
     left: 0;
     right: 0;
     bottom: 0;
@@ -727,8 +725,4 @@ nav p {
     text-align: center;
     font-size: 24px;
     transform: translate(-4%);
-}
-
-.chatbot {
-    position: absolute;
 }
