@@ -764,6 +764,7 @@ nav p {
     bottom: 20px;
     right: 20px;
     z-index: 1000;
+    transform: translate(-20%);
     /* Đảm bảo hiển thị trên tất cả các phần tử khác */
 }
 
