@@ -4,67 +4,12 @@
     font-family: 'AR One Sans', sans-serif;
     cursor: url('./Anh/chuot1.png'), auto;
     scroll-behavior: smooth;
-}
-
-.theSystem {
-    position: fixed;
-    width: 100%;
-    z-index: 1500;
-    /* Đảm bảo nó nằm trên mọi thứ khác */
-    display: flex;
-    align-items: center;
-    text-align: center;
-    padding-bottom: 5px;
-    background: linear-gradient(to right, #ccfbff, #ef96c5);
-}
-
-.theSystem p {
-    display: inline-block;
-    position: relative;
-    transform: translate(215%);
+    touch-action: none;
+    zoom: 91%;
 }
 
 #lang {
     transform: translate(380%);
-}
-
-.theSystem .LanguageOption {
-    display: inline-block;
-    transform: translate(350%);
-}
-
-#languageSelector {
-    background: linear-gradient(to bottom, #fa5347, #703cc5);
-    /* Sử dụng màu chủ đạo cho background */
-    border: 1px solid #fdba00;
-    color: #ffffff;
-    /* Màu chữ trắng */
-    padding: 8px 12px;
-    border-radius: 5px;
-    appearance: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    transition: background 0.3s, color 0.3s;
-    /* Thêm hiệu ứng chuyển đổi màu */
-}
-
-#languageSelector:hover,
-#languageSelector:focus {
-    outline: none;
-    background: linear-gradient(to bottom, #2980b9, #3498db);
-    /* Màu chuyển khi hover hoặc focus */
-    color: #000000;
-    /* Màu chữ trắng khi hover hoặc focus */
-}
-
-#Englis {
-    transform: translate(30%);
-}
-
-@media(prefers-reduced-motion) {
-    .hidden {
-        transition: none;
-    }
 }
 
 html,
@@ -73,13 +18,26 @@ body {
     zoom: 100%;
 }
 
+.TheRealHeader {
+    margin: auto;
+    text-align: left;
+}
+
 .Header {
-    min-height: 100vh;
+    min-height: 120vh;
     width: 100%;
-    background-image: linear-gradient(rgba(88, 78, 78, 0.123), rgba(129, 132, 146, 0.7)), url(./Anh/background.jpg);
-    background-position: center;
     background-size: cover;
     position: relative;
+}
+
+#wtf {
+    width: 100%;
+    height: 1000px;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
 nav {
@@ -88,7 +46,7 @@ nav {
     z-index: 1000;
     /* Đảm bảo nó nằm trên mọi thứ khác */
     display: flex;
-    padding-top: 50px;
+    padding-top: 2px;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.8);
 }
@@ -130,7 +88,7 @@ nav p {
     color: #ffffff;
     text-decoration: none;
     padding: 6px 18px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 
@@ -149,16 +107,20 @@ nav p {
 .Icon-Link .Icon-Link1 ul li a {
     color: #ffffff;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 40px;
+    padding-left: 35px;
     transition: color 0.8s ease;
 }
 
+.Icon-Link .Icon-Link1 p {
+    font-size: 20px;
+}
 
 .Navigation-Link ul li a:hover {
     /*chưa có smooth*/
     color: rgb(255, 174, 0);
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 .Navigation-Link ul li::after {
@@ -272,7 +234,8 @@ nav p {
     width: 70%;
     margin: auto;
     text-align: left;
-    padding-top: 190px;
+    padding-top: 140px;
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .About_Me .Row1 {
@@ -351,7 +314,7 @@ nav p {
 }
 
 .Service {
-    padding-top: 80px;
+    padding-top: 40px;
     min-height: 100vh;
     width: 100%;
     background-image: linear-gradient(rgba(88, 78, 78, 0.123), rgba(129, 132, 146, 0.7)), url(./Anh/Service.png);
@@ -426,7 +389,7 @@ nav p {
     width: 70%;
     margin: auto;
     text-align: left;
-    padding-top: 180px;
+    padding-top: 100px;
 }
 
 .Project .Row1 {
@@ -483,8 +446,8 @@ nav p {
 .FullLienHe .Location {
     width: 70%;
     margin: auto;
-    padding: 60px 0;
-    padding-top: 180px;
+    padding: 40px 0;
+    padding-top: 100px;
 }
 
 .FullLienHe .Location iframe {
@@ -508,9 +471,12 @@ nav p {
 }
 
 .Lienhe-col div {
-    display: flex;
+    display: inline-block;
+    padding-left: 80px;
     align-items: center;
     margin-bottom: 40px;
+    font-size: 23px;
+    transform: translate(-10%);
 }
 
 .FullLienHe .Lienhe-col div .fa-solid {
@@ -586,24 +552,24 @@ nav p {
 
 .FullLienHe {
     min-height: 100vh;
-    height: 550px;
+    height: 650px;
     width: 100%;
     background-image: linear-gradient(rgba(88, 78, 78, 0.123), rgba(129, 132, 146, 0.7)), url(./Anh/Handshake.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
-    padding-bottom: 20px;
 }
 
 /*-----Footer-----*/
 .footer {
     list-style: none;
     text-decoration: none;
-    height: 250px;
+    height: 200px;
     width: 100%;
     background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(./Anh/footer.jpg);
     background-position: center;
     background-size: cover;
+    position: relative;
 }
 
 .footer {
@@ -711,7 +677,7 @@ nav p {
 
 /*-----------Container CSS Start-------*/
 .End {
-    height: 80px;
+    height: 40px;
     background-image: url('./Anh/Slogan.jpg');
     background-size: cover;
     display: flex;
@@ -719,10 +685,11 @@ nav p {
     justify-content: center;
     align-items: center;
     color: rgb(63, 20, 221);
+    position: relative;
 }
 
 .End p {
     text-align: center;
-    font-size: 24px;
+    font-size: 18px;
     transform: translate(-4%);
 }
