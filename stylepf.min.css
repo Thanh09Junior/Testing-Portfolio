@@ -756,3 +756,31 @@ nav p {
     z-index: 1;
     /* Gắn nội dung, văn bản hoặc bất kỳ phần tử con nào khác của slider ở đây */
 }
+
+
+/*------*/
+#fb-customer-chat {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    /* Đảm bảo hiển thị trên tất cả các phần tử khác */
+}
+
+/* Nếu bạn muốn thay đổi kích thước của biểu tượng Messenger */
+.fb_customer_chat_bubble_animated_no_badge {
+    width: 50px;
+    height: 50px;
+}
+
+/* Nếu bạn muốn thay đổi màu của biểu tượng Messenger */
+.fb_customer_chat_bubble_animated_no_badge {
+    background-color: #0084FF;
+    /* Màu xanh dương ví dụ */
+}
+
+/* Nếu bạn muốn thay đổi màu khi di chuột qua */
+.fb_customer_chat_bubble_animated_no_badge:hover {
+    background-color: #0056b3;
+    /* Màu xanh dương tối hơn ví dụ */
+}
